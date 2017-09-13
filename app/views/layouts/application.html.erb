@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OurVeganRecipes</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <header>
+    <div class="container ">
+      <div class="navbar navbar-default">
+        <div class="container">
+          <%= link_to "Our Recipes", "", class: "btn btn-lg btn-success", id: "logo" %>
+          <div class="nav-item">
+            <%= link_to "Recipes", "", class: "btn btn-default btn-warning" %>
+          </div>
+          <div class="nav-item">
+            <%= link_to "Activism", "", class: "btn btn-default btn-warning" %>
+          </div>
+          <div class="nav-item">
+            <%= link_to "Vegan 101", "", class: "btn btn-default btn-warning" %>
+          </div>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="OurVeganRecipes">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+
+  <%= yield %>
+  <div class="footer">
+    <p>&copy; OurVeganRecipes 2017</p>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+$navbar-default-bg: #D46A6A;
+$guava: #AA3939;
+$navbar-default-color: $guava;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#logo {
+  margin: 10px 0 10px 0;
+  float: left;
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+  padding-top: 9px;
+
+}
+
+.nav-item {
+  margin-left: 25px;
+  float: left;
+  margin-top: 20px;
+}
+
+.center {
+  text-align: center;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+#sign-up {
+  margin: 35px 0 50px 300px;
+}
+
+h2 {
+  margin-top: 35px;
+}
+h1 {
+  margin-top: -10px;
+}
+.form-inline {
+  float: right;
+  margin: 20px 35px;
+}
+.left {
+  text-align: left;
+}
